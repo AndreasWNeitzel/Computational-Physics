@@ -85,7 +85,6 @@ def bolzano(f, exact_root, first_point, second_point, iterations=100, stop_condi
             a = c[i]
 
         else:
-            print('Bolzano conditions not met at iteration ' + repr(i))
             return points[:i], error[:i], exact_root
 
         error[i] = abs(c[i+1] - exact_root)
@@ -116,7 +115,6 @@ def false_position(f, exact_root, first_point, second_point, iterations=100, sto
             a = c[i]
 
         else:
-            Print('False position conditions not met at iteration ' + repr(i))
             return points, error, exact_root
 
         error[i] = abs(c[i+1] - exact_root)
